@@ -1,0 +1,19 @@
+<div class="row" *ngFor="let row of board.board">
+  <div class="field" *ngFor="let field of row">
+    {{test(field)}}
+    @if (field.isFieldColorWhite){
+      <div class="white-field">
+        @if (field.piece) {
+          <img [ngSrc]="field.piece.src" width="100" height="100">
+        }
+      </div>
+    } @else {
+      <div class="black-field">
+        @if (field.piece) {
+          <img [ngSrc]="field.piece.src" width="100" height="100">
+        }
+      </div>
+    }
+
+  </div>
+</div>

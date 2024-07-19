@@ -1,0 +1,20 @@
+.row {
+  display: flex;
+  width: fit-content;
+}
+
+.field {
+  height: 100px;
+  width: 100px;
+}
+
+.black-field {
+  background-color: #b48763;
+  height: 100%;
+  width: 100%;
+}
+.white-field {
+  background-color: #eed8b4;
+  height: 100%;
+  width: 100%;
+}
